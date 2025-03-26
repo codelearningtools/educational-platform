@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>codelearningtools</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>codelearningtools</h1>
+        <p>Providing free open-source educational tools for students.</p>
+        <a id="show-reporting" href="#" style="position: absolute; right: 20px; top: 20px; color: white; text-decoration: none; font-size: 1.2rem;">Reporting</a>
+    </header>
+    <main>
+        <div class="navigation">
+            <div class="filters">
+                <select id="grade-filter">
+                    <option value="">Select Grade</option>
+                </select>
+                <select id="subject-filter" disabled>
+                    <option value="">Select Subject Area</option>
+                </select>
+                <select id="category-filter" disabled>
+                    <option value="">Select Category</option>
+                </select>
+            </div>
+            <div id="module-list"></div>
+        </div>
+        <div id="module-container" class="module-container">
+            <p>Welcome! Select a module to begin learning.</p>
+        </div>
+        <div id="reporting-container" class="module-container" style="display: none;">
+            <h2>Session Report</h2>
+            <canvas id="dashboard-chart" width="280" height="200"></canvas>
+            <div id="dashboard-stats"></div>
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
